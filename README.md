@@ -1,2 +1,2 @@
-# rebible.github.io
-Re:Bible Homepage
+![Re:Bible logo](/logo.png)
+Welcome to Re:Bible! :)
