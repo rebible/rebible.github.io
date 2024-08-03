@@ -29,6 +29,6 @@
 8. 추후 베스트 댓글 모음집 발간 및 초정 간증, 그리고 성경 나눔 지역공동체 만들기
 
 
-0803 리바이블 알파테스터 참여 및 설문조사 
+**(8월) 리바이블 알파테스터 참여 및 설문조사**
 
-https://docs.google.com/forms/d/1He38l5XsqcLrgjg6ZrFawRRw8AFys24RXRL3VXC-WEM/edit?chromeless=1
+[알파테스터 설문링크 바로가기](https://docs.google.com/forms/d/1He38l5XsqcLrgjg6ZrFawRRw8AFys24RXRL3VXC-WEM/edit?chromeless=1)
