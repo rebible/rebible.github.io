@@ -28,7 +28,90 @@
 7. 한국어, 영어 뿐 아니라 히브리어, 헬라어 원어 기능 추후 부연설명과 함께 기능 제공
 8. 추후 베스트 댓글 모음집 발간 및 초정 간증, 그리고 성경 나눔 지역공동체 만들기
 
+## 리바이블 진행 상황(로드맵)
 
-**(8월) 리바이블 알파테스터 참여 및 설문조사**
+### 2022년
 
-[알파테스터 설문링크 바로가기](https://docs.google.com/forms/d/1He38l5XsqcLrgjg6ZrFawRRw8AFys24RXRL3VXC-WEM/edit?chromeless=1)
+#### 7월: 리바이블 기획
+
+### 2024년
+
+#### 2월: 1차 IR문서 작성
+
+- 변리사에게 사업 모델 특허 상담
+
+#### 6월: CPO 합류
+
+- 29일 CPO 합류
+
+#### 7월: 브랜딩 작업
+
+- 로고 디자인
+- 명함 디자인
+- 웹사이트 개설
+- 도서 출판을 위한 글감 작성
+- 디자인 문서 제작
+- 초기 디자인 아이디에이션
+- Re:Bible Movement 오픈카톡방 개설 [입장하기](https://open.kakao.com/o/gO3QEzDg)
+
+#### 8월: 1차 알파 테스트
+
+- 알파테스트 진행 (8월 12일-20일)
+  - A(말씀묵상), B(Q&A) 각 방 16명씩 인원
+  - 일일 관찰 블로그
+  - 데이터 분석
+  - 디자인 방향성 도출
+
+#### 9월: 2차 알파 테스트 (페이퍼 프로토타입)
+
+- 와이어프레임 디자인
+- 페이퍼 프로토타입 테스트
+- 프로토타입 구현 시작
+- 2차 IR문서 작성
+
+#### 10월: 3차 알파 테스트 (프로토타입)
+
+- 프로토타입 구현 완료
+- 법인 설립 예정
+- 앱스토어 및 플레이스토어 개발자 계정 등록
+- 프로토타입 테스트
+- MVP 구현 시작
+
+#### 11월: 베타 테스트 (MVP)
+
+- MVP 구현 완료
+- MVP 테스트
+- MVP 테스트 개선사항 반영
+
+#### 12월: 공식 앱 출시
+
+- 출시용 앱 구현 완료
+- 본격적으로 피칭 시작
+- 연말 런칭 기념 감사 예배
+
+## 팀
+
+### David K., CEO
+
+#### Career
+
+- 8 years of experience in the blockchain industry, including founding a blockchain exchange
+- Worked for a trading company covering regions from South America to Southeast Asia
+
+#### Education
+
+- BA of Theology/Philosophy from Yonsei University, 2014
+- Studied graduate school level Counseling and Coaching from Yonsei University, 2017
+- eMBA from INSEAD Business School, 2017
+
+### Essie L., CPO
+
+#### Career
+
+- 9 years of development experience, mostly at AI startups
+- Experience in creating and publishing a mobile game app
+
+#### Education
+
+- BS of Industrial Design from KAIST, 2015
+- Pursuing BSc of Computer Science at University of London, 2025
