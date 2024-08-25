@@ -9,7 +9,6 @@ const Header: React.FC = () => {
         <Image src="./logo.svg" width={114} height={41} alt="Re:Bible Logo" />
         <nav>
           <ul className="flex space-x-6">
-            <li><a href="#about" className="text-gray-700 hover:text-[#db7d63]">소개</a></li>
             <li><a href="#features" className="text-gray-700 hover:text-[#db7d63]">기능</a></li>
             <li><a href="#team" className="text-gray-700 hover:text-[#db7d63]">팀</a></li>
             <li><a href="#roadmap" className="text-gray-700 hover:text-[#db7d63]">로드맵</a></li>
