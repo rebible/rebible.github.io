@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from '@/contexts/TranslationContext';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface TeamMemberProps {
   id: string;
@@ -14,9 +16,19 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   name, position, image, career, education 
 }) => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.5 }}
+      className="bg-white rounded-lg shadow-md overflow-hidden"
+    >
       <div className="p-6">
         <div className="flex items-center space-x-4 mb-6">
           <img src={image} alt={name} className="w-24 h-24 rounded-full object-cover" />
@@ -44,7 +56,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

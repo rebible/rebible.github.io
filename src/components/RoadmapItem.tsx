@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { ChevronRight, ChevronDown } from 'lucide-react';
 
 interface RoadmapItemProps {
@@ -13,11 +14,16 @@ interface RoadmapItemProps {
 
 const RoadmapItem: React.FC<RoadmapItemProps> = ({ phase, icon, title, duration, description, details }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5 }}
       className="relative pl-8 pb-8 border-l-2 border-[#db7d63] last:border-l-0"
     >

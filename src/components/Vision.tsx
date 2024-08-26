@@ -3,17 +3,23 @@
 import React from 'react';
 import { useTranslation } from '@/contexts/TranslationContext';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { Lightbulb } from 'lucide-react';
 
 const Vision: React.FC = () => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <section id="vision" className="py-20 bg-[#db7d63]">
       <div className="container mx-auto px-4">
         <motion.div 
+          ref={ref}
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
           className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto"
         >
