@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
-import dynamic from 'next/dynamic';
+import React, { useState } from 'react';
 import { useTranslation } from '@/contexts/TranslationContext';
-
-const DynamicTeamMember = dynamic(() => import('./TeamMember'), { ssr: false });
+import TeamMember from './TeamMember';
 
 const Team: React.FC = () => {
   const { t } = useTranslation();
 
   const teamMembers = [
     {
+      id: 'david',
       name: t('team.david.name'),
       position: t('team.david.position'),
       image: '/david.jpg',
@@ -25,6 +25,7 @@ const Team: React.FC = () => {
       ],
     },
     {
+      id: 'essie',
       name: t('team.essie.name'),
       position: t('team.essie.position'),
       image: '/essie.jpg',
@@ -47,8 +48,11 @@ const Team: React.FC = () => {
           {t('team.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <DynamicTeamMember key={index} {...member} />
+          {teamMembers.map((member) => (
+            <TeamMember 
+              key={member.id}
+              {...member}
+            />
           ))}
         </div>
       </div>
@@ -57,4 +61,3 @@ const Team: React.FC = () => {
 };
 
 export default Team;
-

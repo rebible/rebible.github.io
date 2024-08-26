@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { createContext, useContext, ReactNode } from 'react'
 import ko from '../../public/locales/ko.json'
@@ -8,12 +8,20 @@ type Translations = typeof ko
 
 const translations: Record<string, Translations> = { ko, en }
 
-const TranslationContext = createContext<{
+type TranslationContextType = {
   t: (key: string) => string
   lang: string
-}>({ t: (key) => key, lang: 'ko' })
+}
 
-export const useTranslation = () => useContext(TranslationContext)
+const TranslationContext = createContext<TranslationContextType | undefined>(undefined)
+
+export const useTranslation = () => {
+  const context = useContext(TranslationContext)
+  if (context === undefined) {
+    throw new Error('useTranslation must be used within a TranslationProvider')
+  }
+  return context
+}
 
 export const TranslationProvider: React.FC<{
   children: ReactNode

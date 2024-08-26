@@ -1,32 +1,26 @@
-'use client'
+'use client';
 
+import React from 'react';
 import { BookOpen, Users, Lightbulb } from 'lucide-react';
 import { useTranslation } from '@/contexts/TranslationContext';
-
-const FeatureCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
-    <div className="text-[#db7d63] mb-4">{icon}</div>
-    <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
+import Feature from './Feature';
 
 const Features: React.FC = () => {
   const { t } = useTranslation();
 
   const features = [
     {
-      icon: <BookOpen className="w-12 h-12" />,
+      icon: <BookOpen className="w-6 h-6 text-white" />,
       title: t('features.daily.title'),
       description: t('features.daily.description'),
     },
     {
-      icon: <Users className="w-12 h-12" />,
+      icon: <Users className="w-6 h-6 text-white" />,
       title: t('features.community.title'),
       description: t('features.community.description'),
     },
     {
-      icon: <Lightbulb className="w-12 h-12" />,
+      icon: <Lightbulb className="w-6 h-6 text-white" />,
       title: t('features.learning.title'),
       description: t('features.learning.description'),
     },
@@ -38,7 +32,7 @@ const Features: React.FC = () => {
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">{t('features.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
+            <Feature key={index} {...feature} />
           ))}
         </div>
       </div>

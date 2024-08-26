@@ -116,13 +116,13 @@ const Header: React.FC = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white/90 backdrop-blur-md shadow-lg">
           <nav className="container mx-auto px-4 py-4">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-[#db7d63] transition-colors duration-200"
+                className="block py-3 text-gray-800 hover:text-[#db7d63] transition-colors duration-200 text-lg font-medium"
                 onClick={toggleMenu}
               >
                 {item.label}
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
             ))}
             <Link
               href={pathname.replace(`/${lang}`, `/${switchLanguage}`)}
-              className="block py-2 text-gray-700 hover:text-[#db7d63] transition-colors duration-200"
+              className="block py-3 text-gray-800 hover:text-[#db7d63] transition-colors duration-200 text-lg font-medium"
               onClick={toggleMenu}
             >
               {switchLanguageLabel}
