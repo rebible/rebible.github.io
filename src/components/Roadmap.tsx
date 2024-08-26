@@ -1,28 +1,60 @@
-import RoadmapItem from '@/components/RoadmapItem';
+'use client'
 
-const Roadmap: React.FC = () => (
-  <section id="roadmap" className="py-20 bg-gray-100">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold text-center mb-12 text-[#434343]">개발 로드맵</h2>
-      <div className="max-w-2xl mx-auto">
-        <RoadmapItem 
-          phase="1"
-          duration="MVP (2024년 12월 예정)"
-          description="기본 묵상 및 커뮤니티 기능"
-        />
-        <RoadmapItem 
-          phase="2"
-          duration="파일럿 (2025년 6월 예정)"
-          description="고급 개인화 및 학습 기능"
-        />
-        <RoadmapItem 
-          phase="3"
-          duration="완성 (2026년 12월 예정)"
-          description="AI 시스템 고도화 및 다국어 지원"
-        />
+import React from 'react';
+import { useTranslation } from '@/contexts/TranslationContext';
+import RoadmapItem from './RoadmapItem';
+import { BookOpen, Users, Rocket } from 'lucide-react';
+
+const Roadmap: React.FC = () => {
+  const { t } = useTranslation();
+
+  const roadmapItems = [
+    {
+      phase: "1",
+      icon: <BookOpen className="w-6 h-6" />,
+      title: t('roadmap.phase1.title'),
+      duration: t('roadmap.phase1.duration'),
+      description: t('roadmap.phase1.description'),
+      details: t('roadmap.phase1.details'),
+    },
+    {
+      phase: "2",
+      icon: <Users className="w-6 h-6" />,
+      title: t('roadmap.phase2.title'),
+      duration: t('roadmap.phase2.duration'),
+      description: t('roadmap.phase2.description'),
+      details: t('roadmap.phase2.details'),
+    },
+    {
+      phase: "3",
+      icon: <Rocket className="w-6 h-6" />,
+      title: t('roadmap.phase3.title'),
+      duration: t('roadmap.phase3.duration'),
+      description: t('roadmap.phase3.description'),
+      details: t('roadmap.phase3.details'),
+    },
+  ];
+
+  return (
+    <section id="roadmap" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">{t('roadmap.title')}</h2>
+        <div className="max-w-3xl mx-auto">
+          {roadmapItems.map((item, index) => (
+            <RoadmapItem
+              key={index}
+              phase={item.phase}
+              icon={item.icon}
+              title={item.title}
+              duration={item.duration}
+              description={item.description}
+              details={item.details}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Roadmap;

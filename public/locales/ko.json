@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Re:Bible - 일상 속 묵상, 함께 나누는 믿음의 여정",
+    "description": "현대인의 라이프스타일에 맞춘 디지털 성경 플랫폼"
+  },
+  "nav": {
+    "features": "기능",
+    "team": "팀",
+    "roadmap": "로드맵",
+    "vision": "비전"
+  },
+  "hero": {
+    "title": "일상 속 묵상, 함께 나누는 믿음의 여정",
+    "subtitle": "현대인의 라이프스타일에 맞춰 성경 말씀을 쉽게 접하고 묵상할 수 있는 기회를 제공하며, 개인의 신앙 경험을 공유할 수 있는 플랫폼입니다.",
+    "cta": "알파 테스트 참여하기"
+  },
+  "features": {
+    "title": "주요 기능",
+    "daily": {
+      "title": "일일 묵상",
+      "description": "매일 제공되는 말씀과 묵상 가이드"
+    },
+    "community": {
+      "title": "커뮤니티",
+      "description": "믿음의 동료들과 함께 나누는 묵상과 기도"
+    },
+    "learning": {
+      "title": "성경 학습",
+      "description": "체계적인 성경 공부와 퀴즈"
+    }
+  },
+  "team": {
+    "title": "팀 소개",
+    "david": {
+      "name": "김성익",
+      "position": "창업자 & CEO",
+      "career": {
+        "1": "블록체인 산업 8년 경력",
+        "2": "블록체인 거래소 창립",
+        "3": "남미에서 동남아시아까지 지역을 담당하는 무역 회사 근무"
+      },
+      "education": {
+        "1": "INSEAD 경영대학원 eMBA, 2017",
+        "2": "연세대학교 대학원 상담코칭학 과정, 2017",
+        "3": "연세대학교 신학/철학 학사, 2014"
+      }
+    },
+    "essie": {
+      "name": "이승민",
+      "position": "공동 창업자 & CPO",
+      "career": {
+        "1": "주로 AI 스타트업에서 9년간의 개발 경력",
+        "2": "모바일 게임 앱 제작 및 출시 경험"
+      },
+      "education": {
+        "1": "런던대학교 컴퓨터 과학 학사 과정 중, 2025 졸업 예정",
+        "2": "KAIST 산업디자인학과 학사, 2015",
+        "3": "TU Delft 인터랙티브 환경 마이너 프로그램 이수, 2013년 가을"
+      }
+    }
+  },
+  "teamMember": {
+    "viewDetails": "상세 정보 보기",
+    "career": "경력",
+    "education": "학력"
+  },
+  "roadmap": {
+    "title": "개발 로드맵",
+    "phase1": {
+      "title": "기반 구축",
+      "duration": "2024년 12월 예정",
+      "description": "핵심 기능 개발 및 베타 테스트",
+      "details": "사용자 인증, 성경 콘텐츠 데이터베이스 구축, 기본적인 묵상 기능 개발 등"
+    },
+    "phase2": {
+      "title": "커뮤니티 확장",
+      "duration": "2025년 6월 예정",
+      "description": "소셜 기능 강화 및 콘텐츠 다양화",
+      "details": "사용자 간 상호작용 기능, 그룹 스터디 기능, 다양한 번역본 추가 등"
+    },
+    "phase3": {
+      "title": "AI 통합 및 개인화",
+      "duration": "2026년 12월 예정",
+      "description": "AI 기반 개인화 및 글로벌 확장",
+      "details": "AI 기반 묵상 추천, 다국어 지원, 오프라인 교회와의 연계 기능 등"
+    }
+  },
+  "vision": {
+    "title": "비전",
+    "description": "Re:Bible을 통해 모든 크리스천들이 일상에서 쉽고 의미 있게 성경을 접하고, 개인의 묵상을 댓글로 나누며, 함께 성장하는 글로벌 신앙 커뮤니티를 만들어갑니다."
+  },
+  "footer": {
+    "description": "Re:Bible은 성경의 영원한 지혜를 일상 생활에 접목시키는 디지털 플랫폼으로, 전 세계적인 신앙과 묵상의 커뮤니티를 육성합니다.",
+    "quickLinks": "빠른 링크",
+    "followUs": "팔로우하기",
+    "copyright": "© 2024 Re:Bible. All rights reserved."
+  },
+  "languageToggle": {
+    "ko": "한국어",
+    "en": "English"
+  }
+}

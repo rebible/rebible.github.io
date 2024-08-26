@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Re:Bible - Daily Reflection, Sharing the Journey of Faith",
+    "description": "A digital Bible platform tailored to modern lifestyles"
+  },
+  "nav": {
+    "features": "Features",
+    "team": "Team",
+    "roadmap": "Roadmap",
+    "vision": "Vision"
+  },
+  "hero": {
+    "title": "Daily Reflection, Sharing the Journey of Faith",
+    "subtitle": "A platform that provides opportunities to easily access and reflect on Bible verses tailored to modern lifestyles, and share personal faith experiences.",
+    "cta": "Join Alpha Test"
+  },
+  "features": {
+    "title": "Key Features",
+    "daily": {
+      "title": "Daily Reflection",
+      "description": "Daily verses and reflection guides"
+    },
+    "community": {
+      "title": "Community",
+      "description": "Share reflections and prayers with fellow believers"
+    },
+    "learning": {
+      "title": "Bible Study",
+      "description": "Systematic Bible study and quizzes"
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "david": {
+      "name": "David Kim",
+      "position": "Founder & CEO",
+      "career": {
+        "1": "8 years of experience in the blockchain industry",
+        "2": "Founded a blockchain exchange",
+        "3": "Worked for a trading company covering regions from South America to Southeast Asia"
+      },
+      "education": {
+        "1": "eMBA from INSEAD Business School, 2017",
+        "2": "Studied graduate school level Counseling and Coaching from Yonsei University, 2017",
+        "3": "BA of Theology/Philosophy from Yonsei University, 2014"
+      }
+    },
+    "essie": {
+      "name": "Essie Lee",
+      "position": "Co-founder & CPO",
+      "career": {
+        "1": "9 years of development experience, mostly at AI startups",
+        "2": "Experience in creating and publishing a mobile game app"
+      },
+      "education": {
+        "1": "Pursuing BSc of Computer Science at University of London, 2025",
+        "2": "BS of Industrial Design from KAIST, 2015",
+        "3": "Studied Interactive Environments Minor Program at TU Delft, Fall 2013"
+      }
+    }
+  },
+  "teamMember": {
+    "viewDetails": "View Details",
+    "career": "Career",
+    "education": "Education"
+  },
+  "roadmap": {
+    "title": "Development Roadmap",
+    "phase1": {
+      "title": "Foundation Building",
+      "duration": "Expected December 2024",
+      "description": "Develop core features and conduct beta testing",
+      "details": "Implement user authentication, establish Bible content database, develop basic meditation features, and conduct initial user testing to gather feedback."
+    },
+    "phase2": {
+      "title": "Community Expansion",
+      "duration": "Expected June 2025",
+      "description": "Enhance social features and diversify content",
+      "details": "Introduce user interaction features, implement group study functionality, add various Bible translations, and expand content offerings including devotionals and commentaries."
+    },
+    "phase3": {
+      "title": "AI Integration and Personalization",
+      "duration": "Expected December 2026",
+      "description": "Implement AI-based personalization and global expansion",
+      "details": "Develop AI-powered meditation recommendations, introduce multi-language support, create features for connecting with local churches, and optimize the app for global markets."
+    }
+  },
+  "vision": {
+    "title": "Vision",
+    "description": "Through Re:Bible, we create a global faith community where all Christians can easily and meaningfully access the Bible in their daily lives, share personal reflections, and grow together."
+  },
+  "footer": {
+    "description": "Re:Bible is a digital platform that brings the timeless wisdom of the Bible into your daily life, fostering a global community of faith and reflection.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 Re:Bible. All rights reserved."
+  },
+  "languageToggle": {
+    "ko": "한국어",
+    "en": "English"
+  }
+}

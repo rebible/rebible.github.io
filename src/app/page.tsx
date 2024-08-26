@@ -1,23 +1,23 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Team from '@/components/Team';
-import Roadmap from '@/components/Roadmap';
-import Vision from '@/components/Vision';
-import Footer from '@/components/Footer';
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div className="font-sans">
-      <main>
-        <Header />
-        <Hero />
-        <Features />
-        <Team />
-        <Roadmap />
-        <Vision />
-      </main>
-      <Footer />
-    </div>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    const userLanguage = navigator.language || navigator.languages[0];
+    const supportedLanguages = ['en', 'ko'];
+    
+    // Extract the language code (e.g., 'en' from 'en-US')
+    const languageCode = userLanguage.split('-')[0];
+    
+    // Check if the language is supported, otherwise default to 'en'
+    const redirectLanguage = supportedLanguages.includes(languageCode) ? languageCode : 'en';
+    
+    router.replace(`/${redirectLanguage}`);
+  }, [router]);
+
+  return null; // This page doesn't render anything
 }

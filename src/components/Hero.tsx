@@ -1,19 +1,46 @@
 'use client'
 
-const Hero: React.FC = () => (
-  <section className="bg-gray-100 py-20">
-    <div className="container mx-auto text-center px-4">
-      <h2 className="text-4xl font-bold mb-4 text-[#434343]">일상 속 묵상, 함께 나누는 믿음의 여정</h2>
-      <p className="text-xl mb-8 text-gray-600">현대인의 라이프스타일에 맞춘 디지털 성경 플랫폼</p>
-      <a
-        href="https://open.kakao.com/o/gO3QEzDg"
-        className="bg-[#db7d63] text-white py-2 px-6 rounded-full font-bold hover:bg-[#c26e56] transition duration-300"
-        target="_blank"
-      >
-        오픈카톡방 입장하기
-      </a>
-    </div>
-  </section>
-);
+import React from 'react';
+import Image from 'next/image';
+import { useTranslation } from '@/contexts/TranslationContext';
+
+const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/hero-background.png"
+        alt="Bible study background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+      />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      
+      {/* Content */}
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          {t('hero.title')}
+        </h1>
+        <p className="text-xl sm:text-2xl mb-10 max-w-3xl mx-auto">
+          {t('hero.subtitle')}
+        </p>
+        <a
+          href="https://open.kakao.com/o/gO3QEzDg"
+          className="bg-[#db7d63] text-white py-3 px-8 rounded-full font-bold hover:bg-[#c26e56] transition duration-300 inline-block"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t('hero.cta')}
+        </a>
+      </div>
+    </section>
+  );
+};
 
 export default Hero;

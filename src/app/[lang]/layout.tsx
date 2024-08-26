@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
+import '../globals.css'
+import { TranslationProvider } from '@/contexts/TranslationContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,12 +11,18 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params: { lang },
 }: {
   children: React.ReactNode
+  params: { lang: string }
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang={lang}>
+      <body className={inter.className}>
+        <TranslationProvider lang={lang}>
+          {children}
+        </TranslationProvider>
+      </body>
     </html>
   )
 }
