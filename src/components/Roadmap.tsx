@@ -3,7 +3,7 @@
 import React from 'react';
 import { useTranslation } from '@/contexts/TranslationContext';
 import RoadmapItem from './RoadmapItem';
-import { BookOpen, Users, Rocket } from 'lucide-react';
+import { BookOpen, Users, Cpu } from 'lucide-react';
 
 const Roadmap: React.FC = () => {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ const Roadmap: React.FC = () => {
     },
     {
       phase: "3",
-      icon: <Rocket className="w-6 h-6" />,
+      icon: <Cpu className="w-6 h-6" />,
       title: t('roadmap.phase3.title'),
       duration: t('roadmap.phase3.duration'),
       description: t('roadmap.phase3.description'),
