@@ -24,21 +24,6 @@ const Team: React.FC = () => {
         t('team.david.education.3'),
       ],
     },
-    {
-      id: 'essie',
-      name: t('team.essie.name'),
-      position: t('team.essie.position'),
-      image: '/essie.jpg',
-      career: [
-        t('team.essie.career.1'),
-        t('team.essie.career.2')
-      ],
-      education: [
-        t('team.essie.education.1'),
-        t('team.essie.education.2'),
-        t('team.essie.education.3'),
-      ],
-    },
   ];
 
   return (
